@@ -15,7 +15,14 @@ Add this to your ``zope.conf`` to enable the zc.ngi server on the loopback inter
     <product-config five.z2monitor>
         bind 127.0.0.1:8888
     </product-config>
+    
+    
+If you need IPv6, you can depend on ``zc.ngi>=2.1.0``.
+In this case, you can bind to any IPv6 address with::
 
+    <product-config five.z2monitor>
+        bind :::8888
+    </product-config>
 
 Probes
 ======
